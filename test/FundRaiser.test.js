@@ -46,7 +46,6 @@ contract('FundRaiser', ([deployer, Requester, donor]) => {
 
             CampaignCount = await fundraiser.IdCount()
 
-
         })
 
         it('creates a campaign', async () => {
@@ -113,7 +112,6 @@ contract('FundRaiser', ([deployer, Requester, donor]) => {
             
             //check logs
             const event3 = result.logs[0].args
-            
             
             assert.equal(event3.Title, 'First_Campaign', 'here TIT problem')
             assert.equal(event3.Description, 'this is just a simple description for test purpose', 'here DES problem')
