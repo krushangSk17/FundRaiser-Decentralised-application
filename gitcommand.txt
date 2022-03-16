@@ -1,0 +1,9 @@
+touch .gitignore  ---> node_modules/
+git config --global user.name "Krushang"
+git config --global user.email "krushangsatani2552@gmail.com"
+git init
+git add .  //move all file to staging area
+git commit -m "initial commit" 
+git status   //just to see the log file
+
+git push origin master
